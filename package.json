@@ -1,0 +1,107 @@
+{
+    "name": "enso",
+    "private": true,
+    "description": "[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework) [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework) [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework) [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)",
+    "author": "Adrian Ocneanu",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "rm -rf ../public/{js,themes,themes-rtl,images} && vue-cli-service build --no-clean && rm -rf ../public/js/*.map",
+        "lint": "vue-cli-service lint",
+        "dev": "rm -rf ../public/{js,themes,themes-rtl,images} && vue-cli-service build --no-clean --mode development",
+        "postinstall": "opencollective-postinstall && patch-package",
+        "prod": "npm run build"
+    },
+    "main": "vue.config.js",
+    "dependencies": {
+        "@enso-ui/accessories": "^4.0",
+        "@enso-ui/activity-log": "^5.0",
+        "@enso-ui/calendar": "^5.0",
+        "@enso-ui/charts": "^4.0",
+        "@enso-ui/comments": "^4.0",
+        "@enso-ui/data-import": "^5.0",
+        "@enso-ui/directives": "^2.0",
+        "@enso-ui/discussions": "^4.0",
+        "@enso-ui/documents": "^4.0",
+        "@enso-ui/filters": "^3.0",
+        "@enso-ui/forms": "^3.0",
+        "@enso-ui/how-to": "^5.0",
+        "@enso-ui/mixins": "^4.0",
+        "@enso-ui/tables": "^3.0",
+        "@enso-ui/tasks": "^4.0",
+        "@enso-ui/teams": "^5.0",
+        "@enso-ui/themes": "^3.0",
+        "@enso-ui/transitions": "^2.0",
+        "@enso-ui/tutorials": "^5.0",
+        "@enso-ui/ui": "^6.0",
+        "@fortawesome/fontawesome-free": "^5.11.2",
+        "@fortawesome/fontawesome-svg-core": "^1.2.2",
+        "@fortawesome/free-brands-svg-icons": "^5.11.2",
+        "@fortawesome/free-regular-svg-icons": "^5.11.2",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/vue-fontawesome": "3.0.0-5",
+        "@vue/compat": "^3.2.20",
+        "animate.css": "^4.0.0",
+        "axios": "^0.21.1",
+        "bulma": "^0.9.0",
+        "core-js": "^3.3.2",
+        "opencollective": "^1.0.3",
+        "opencollective-postinstall": "^2.0.0",
+        "patch-package": "^6.4.7",
+        "postinstall-postinstall": "^2.0.0",
+        "pusher-js": "^7.0.0",
+        "v-tooltip": "^4.0.0-beta.2",
+        "vue": "^3.0",
+        "vue-router": "^4.0.0-0",
+        "vuex": "^4.0.0-0",
+        "vuex-router-sync": "6.0.0-rc.1"
+    },
+    "devDependencies": {
+        "@sentry/webpack-plugin": "^1.12.1",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "@vue/compiler-sfc": "^3.0.0",
+        "@vue/eslint-config-airbnb": "^5.0.0",
+        "autoprefixer": "^9.6.1",
+        "babel-eslint": "^10.0.1",
+        "copy-webpack-plugin": "^6.0.0",
+        "cross-env": "^6.0.0",
+        "eslint": "^7.0.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.20.0",
+        "eslint-plugin-vue": "^8.0.3",
+        "ignore-assets-webpack-plugin": "^2.0.1",
+        "mini-css-extract-plugin": "^2.4.0",
+        "node-sass": "^6.0.1",
+        "postcss-import": "^14.0.0",
+        "postcss-loader": "^4.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "sass": "^1.43.4",
+        "sass-loader": "10.1.1",
+        "style-loader": "^2.0.0"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "collective": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/Enso"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "false": {},
+    "jshintConfig": {
+        "esversion": 6
+    },
+    "keywords": [],
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/laravel-enso/enso"
+    }
+}
